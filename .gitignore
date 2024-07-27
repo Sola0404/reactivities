@@ -1,0 +1,19 @@
+# Ignore bin and obj directories
+**/bin/
+**/obj/
+
+# Ignore other generated files
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+
+# Ignore user-specific files
+*.user
+*.suo
+.vscode/
+.idea/
+
+# Ignore macOS system files
+.DS_Store
