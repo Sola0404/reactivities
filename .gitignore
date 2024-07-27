@@ -17,3 +17,9 @@
 
 # Ignore macOS system files
 .DS_Store
+
+# Ignore SQLite database files
+*.db
+*.db-shm
+*.db-wal
+
