@@ -1,0 +1,12 @@
+body {
+  background-color: #d4d8f0 !important;
+}
+
+.ui.inverted.top.fixed.menu {
+  background-image: linear-gradient(to right, #232946, #b8c1ec, #eebbc3) !important;
+}
+
+.nav-btn {
+  background-color: #eebbc3 !important;
+  color: #232946 !important;
+}
