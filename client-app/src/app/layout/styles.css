@@ -9,4 +9,35 @@ body {
 .nav-btn {
   background-color: #eebbc3 !important;
   color: #232946 !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #d4a6ae !important;
+  color: #ffffff !important;
+}
+
+/* styles for activity list */
+.ui.segment {
+  background-color: #fffffe !important;
+}
+
+.activity-header {
+  color: #2d355b !important;
+  transition: color 0.3s ease;
+}
+
+.activity-header:hover {
+  color: #c7929a !important;
+}
+
+.activity-btn {
+  background-color: #b8c1ec !important;
+  color: #232946 !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.activity-btn:hover {
+  background-color: #878fb1 !important;
+  color: #ffffff !important;
 }
