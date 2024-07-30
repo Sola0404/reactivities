@@ -3,13 +3,15 @@ import { Activity } from "../../../app/models/activity";
 import { ChangeEvent, useState } from "react";
 
 interface Props {
-	closeForm: () => void;
 	activity: Activity | undefined;
+	closeForm: () => void;
+	createOrEdit: (activity: Activity) => void;
 }
 
 export default function ActivityForm({
-	closeForm,
 	activity: selectedActivity,
+	closeForm,
+	createOrEdit,
 }: Props) {
 	const initialState = selectedActivity ?? {
 		id: "",
@@ -24,7 +26,7 @@ export default function ActivityForm({
 	const [activity, setActivity] = useState(initialState);
 
 	function handleSubmit() {
-		console.log(activity);
+		createOrEdit(activity);
 	}
 
 	function handleInputChange(
