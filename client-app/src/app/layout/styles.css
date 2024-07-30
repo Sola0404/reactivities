@@ -9,7 +9,7 @@ body {
 .nav-btn {
   background-color: #eebbc3 !important;
   color: #232946 !important;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease !important;
 }
 
 .nav-btn:hover {
@@ -39,5 +39,16 @@ body {
 
 .activity-btn:hover {
   background-color: #878fb1 !important;
+  color: #ffffff !important;
+}
+
+.submit-btn {
+  background-color: #eebbc3 !important;
+  color: #232946 !important;
+  transition: background-color 0.3s ease, color 0.3s ease !important;
+}
+
+.submit-btn:hover {
+  background-color: #d4a6ae !important;
   color: #ffffff !important;
 }
