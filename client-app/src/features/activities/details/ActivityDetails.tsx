@@ -4,11 +4,13 @@ import { Activity } from "../../../app/models/activity";
 interface Props {
 	activity: Activity;
 	cancelSelectActivity: () => void;
+	openForm: (id: string) => void;
 }
 
 export default function ActivityDetails({
 	activity,
 	cancelSelectActivity,
+	openForm,
 }: Props) {
 	return (
 		<Card fluid>
@@ -22,7 +24,12 @@ export default function ActivityDetails({
 			</Card.Content>
 			<Card.Content extra>
 				<Button.Group widths="2">
-					<Button basic content="Edit" color="purple" />
+					<Button
+						onClick={() => openForm(activity.id)}
+						basic
+						content="Edit"
+						color="purple"
+					/>
 					<Button
 						onClick={cancelSelectActivity}
 						basic
