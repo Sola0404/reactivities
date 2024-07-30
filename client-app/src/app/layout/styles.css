@@ -52,3 +52,7 @@ body {
   background-color: #d4a6ae !important;
   color: #ffffff !important;
 }
+
+.loading-container {
+  background-image: linear-gradient(to right, #b8c1ec, #eebbc3) !important;
+}
