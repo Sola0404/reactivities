@@ -2,7 +2,7 @@ import { Card, Image, Button } from "semantic-ui-react";
 import { useStore } from "../../../app/stores/store";
 import LoadingComponent from "../../../app/layout/LoadingComponent";
 import { observer } from "mobx-react-lite";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useEffect } from "react";
 
 export default observer(function ActivityDetails() {
@@ -32,8 +32,14 @@ export default observer(function ActivityDetails() {
 			</Card.Content>
 			<Card.Content extra>
 				<Button.Group widths="2">
-					<Button basic content="Edit" color="purple" />
-					<Button basic content="Cancel" color="grey" />
+					<Button
+						as={Link}
+						to={`/manage/${activity.id}`}
+						basic
+						content="Edit"
+						color="purple"
+					/>
+					<Button as={Link} to="/activities" basic content="Cancel" color="grey" />
 				</Button.Group>
 			</Card.Content>
 		</Card>
